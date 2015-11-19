@@ -11,5 +11,8 @@ RUN plugin install royrusso/elasticsearch-HQ/v2.0.3
 
 COPY config /usr/share/elasticsearch/config
 
+EXPOSE 9200
+EXPOSE 9300
+
 
 

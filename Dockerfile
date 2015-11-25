@@ -1,7 +1,7 @@
 FROM elasticsearch:1.3.9
 
-COPY elasticsearch-analysis-ik-1.4.0.zip /home/
-COPY elasticsearch-analysis-pinyin-1.3.0.zip /home/
+COPY elasticsearch-analysis-ik-1.2.8.zip /home/
+COPY elasticsearch-analysis-pinyin-1.2.3.zip /home/
 
 RUN plugin --url file:///home/elasticsearch-analysis-ik-1.2.8.zip --install analysis-ik
 RUN plugin --url file:///home/elasticsearch-analysis-pinyin-1.2.3.zip --install analysis-pinyin
